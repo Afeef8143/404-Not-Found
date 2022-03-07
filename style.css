@@ -74,7 +74,7 @@ img{
 }
 
 /* ---Responsive--- */
-@media (orientation: portrait) and (max-width: 600px) {
+@media screen and  (max-width: 850px) {
 	.navbar h2{
 		padding-left: 40px;
 	}
