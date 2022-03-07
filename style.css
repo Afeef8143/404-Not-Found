@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ---Navbar--- */
+.navbar{
+	height: 100px;
+}
+.navbar h2{
+	color: #333333;
+	font-family: 'Inconsolata', monospace;
+    letter-spacing: -0.08em;
+    padding: 25px 0px 0px 80px;
+	font-size: 30px;
+}
+/* ---Main--- */
+img{
+	width: 400px;
+	height: 350px;
+	margin: 25px 0px 0px 80px;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 50px;
+}
+.content{
+	padding: 30px 80px 0px 0px;
+}
+.content h1{
+	font-size: 50px;
+	font-family: 'Space Mono', monospace;
+	margin-bottom: 30px;
+	word-spacing: 0.05em;
+	line-height: 70px;
+    color: #333;
+}
+.content p{
+	font-size: 22px;
+	margin-bottom: 50px;
+	font-family: 'Space Mono', monospace;
+	color: #4F4F4F;
+	line-height: 36px;
+	word-spacing: 0.09em;
+}
+.content a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #333;
+	padding: 20px 25px 20px 25px;
+	font-size: 12px;
+	transition: 0.3s ease;
+}
+.content a:hover{
+	color: #333;
+	background-color: #fff;
+	border: 3px solid #333;
+}
+/* ---Footer--- */
+.footer p{
+	font-size: 20px;
+	text-align: center;
+	padding: 80px 0px 0px 0px;
+	color: #a09f9f;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer a{
+	color: #888686;
+}
+
+/* ---Responsive--- */
+@media only screen and (max-width: 700px) {
+	.navbar h2{
+		padding-left: 40px;
+	}
+	img{
+        width: 300px;
+		height: 250px;
+		margin: 0px;
+    }
+	.container{
+		display: flex;
+        margin-right: 20px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    }
+	.content{
+		padding: 30px 0px 0px 30px;
+    }
+	.content h1{
+		font-size: 30px;
+		word-spacing: 0.01em;
+		line-height: 50px;
+		margin-bottom: 25px;
+	}
+	.content p{
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	.content a{
+		font-size: 10px;
+		padding: 15px;
+	}
+    .footer p{
+		font-size: 16px;
+		margin-top: 30px;
+	}
+}
